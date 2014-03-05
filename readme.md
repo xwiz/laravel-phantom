@@ -1,8 +1,8 @@
 # Laravel Phantom
 
-$pdfGenerator = new LaravelPhantom();
+$pngGenerator = new LaravelPhantom();
 
-$capture = $pdfGenerator->open(url)
+$capture = $pngGenerator->open(url)
                          ->filetype('png')
                          ->size(1200,675)
                          ->capture();
@@ -13,3 +13,8 @@ if ( $capture->success() )
 } else {
     return $capture->error();
 }
+
+
+$pdfGenerator = new LaravelPhantom();
+
+$capture = $pdfGenerator->
