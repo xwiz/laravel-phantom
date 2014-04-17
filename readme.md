@@ -1,5 +1,5 @@
 # Laravel Phantom
-
+allezzz
 $pngGenerator = new LaravelPhantom();
 
 $capture = $pngGenerator->open(url)
