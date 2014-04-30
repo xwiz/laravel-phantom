@@ -145,7 +145,7 @@ class PdfPhantom
 	public function getPhantomProcess( $viewPath )
 	{
 		$system = $this->getSystem();
-		$phantom = __DIR__ . '/bin/' . $system . '/phantomjs/phantomjs' . $this->getExtension( $system );
+		$phantom = __DIR__ . '/bin/' . $system . '/phantomjs' . $this->getExtension( $system );
 		$html2pdf = __DIR__ . '/bin/' . 'html2pdf.js';
 		// $output_file = __DIR__ . '/output/' . $this->getDownloadFileName(); // used for sandbox
 		$output_file = $this->output_file;
