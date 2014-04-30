@@ -1,0 +1,20 @@
+{
+    "name": "freyskeyd/laravel-phantom",
+    "description": "",
+    "authors": [
+        {
+            "name": "Simon PAITRAULT",
+            "email": "contact@freyskeyd.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Freyskeyd\\LaravelPhantom": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
