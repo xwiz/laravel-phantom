@@ -11,15 +11,6 @@ class LaravelPhantomServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
-	/**
-	 * Bootstrap the application events.
-	 *
-	 * @return void
-	 */
-	public function boot()
-	{
-		$this->package('freyskeyd/laravel-phantom');
-	}
 
 	/**
 	 * Register the service provider.
@@ -28,10 +19,11 @@ class LaravelPhantomServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bindShared('Freyskeyd\LaravelPhantom\PhantomRepositoryInterface', function()
-		{
-			return new EloquentPhantomRepository;
-		});
+		$this->app->booting(function()
+        {
+            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+            $loader->alias('PdfPhantom', 'Freyskeyd\LaravelPhantom\PdfPhantom');
+        });
 	}
 
 	/**
@@ -41,7 +33,7 @@ class LaravelPhantomServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array('pdfphantom');
 	}
 
 }

@@ -3,19 +3,13 @@
     "description": "",
     "authors": [
         {
-            "name": "Simon Paitrault",
+            "name": "Simon PAITRAULT",
             "email": "contact@freyskeyd.fr"
         }
     ],
-    "require-dev": {
-        "mockery/mockery": " 0.9.*"
-    },
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.1.*",
-        "illuminate/filesystem": " ~4.1",
-        "nesbot/carbon": " ~1.0",
-        "symfony/http-kernel": " ~2.4"
+        "illuminate/support": "4.1.*"
     },
     "autoload": {
         "psr-0": {
