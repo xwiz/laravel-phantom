@@ -17,4 +17,5 @@ if ( $capture->success() )
 
 $pdfGenerator = new LaravelPhantom();
 
-$capture = $pdfGenerator->
+
+v0.0.6
